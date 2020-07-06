@@ -50,6 +50,6 @@ public class PlanSpec {
 
     Plan createPlan() {
         return new Plan(project(), "GitHub", "GIT")
-                .description("Plan created from Bamboo Java Specs");
+                .description("Wowwwww");
     }
 }
