@@ -22,7 +22,7 @@ public class PlanSpec {
      */
     public static void main(String[] args) throws Exception {
         // by default credentials are read from the '.credentials' file
-        BambooServer bambooServer = new BambooServer("http://local-bamboo704:8085");
+        BambooServer bambooServer = new BambooServer("http://bamboo690:8085");
 
         Plan plan = new PlanSpec().createPlan();
         bambooServer.publish(plan);
