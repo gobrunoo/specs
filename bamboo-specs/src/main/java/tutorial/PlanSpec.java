@@ -50,6 +50,12 @@ public class PlanSpec {
 
     Plan createPlan() {
         return new Plan(project(), "GitHub", "GIT")
-                .description("Wowwwww");
+                .description("Wowwwww")
+                .stages(new Stage("Rocket assembly")
+                    .jobs(new Job("Gather parts", "PARTS")
+                        .tasks(
+                            new ScriptTask()
+                                .interpreterShell()
+                                .inlineBody("echo 'OK'"))));
     }
 }
